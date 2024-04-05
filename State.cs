@@ -7,7 +7,6 @@ namespace FSM
     public abstract class State : MonoBehaviour
     {
         private List<Transition> transitions = new();
-        [field: SerializeField] public string Anim { get; protected set; }
         [field: SerializeField] protected float LockTime { get; set; }
 
         private float lockTimeCounter = 0f;
